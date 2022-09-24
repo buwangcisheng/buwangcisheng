@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            width: 500px;
+            height: 40px;
+            line-height: 40px;
+            margin: 50px auto 0 auto;
+            display: flex;
+            border: 1px solid #ccc;
+        }
+        nav a{
+            /* background-color: aqua; */
+            flex-grow: 1;
+            text-align: center;
+            text-decoration: none;
+        }
+        .active{
+            background-color: aqua;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="active">首页</a>
+        <a href="#">新闻</a>
+        <a href="#">产品</a>
+        <a href="#">服务</a>
+        <a href="#">关于我们</a>
+    </nav>
+    <script>
+        //目标；点击a标签，给a标签添加背景色 
+        //1获取元素
+        var aA = document.querySelectorAll('nav a')
+
+        //4定义一个变量
+        var last = aA[0]
+        //2为aA
+        for(var i=0;i<aA.length;i++){
+            aA[i].onclick = function(){
+                last.className = ''
+            //3给a标签添加背景色
+            this.className = 'active'
+            //6为当前a标签添加背景色之后
+            last = this
+        }
+        }
+        
+    </script>
+</body>
+</html>
