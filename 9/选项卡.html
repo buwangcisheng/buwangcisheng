@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1 {
+            width: 600px;
+            height: 140px;
+            border: 1px solid aqua;
+        }
+        .a2 div{
+            display: none;
+        }
+        .a2 div:first-child{
+            display: block;
+        }
+        #span1{
+            width: 35px;
+            height: 10px;
+            left: 10px;
+            position: absolute;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a1">
+        <div class="a11">
+            <button id="a111">抗疫</button>
+            <button id="a1111">专栏</button>
+            <button id="a11111">热点</button>
+            <span id="span1"></span>
+        </div>
+        <div class="a2">
+            <div id="a22">
+                时候就热压机活动简介好家伙混剪1很久很久以前3回家后将。她与图仰头与3动态1都3等等人缺点3对有的都人的1它让有都1有人
+            </div>
+            <div id="a222">
+                寄托于有天域套让他让她天热让1了额锐特任意图如2用途如2与他人炎热如投入页头3太容易退热贴俄3突然如2让他让一人2又突然2一幅幅都干饭分分3
+            </div>
+            <div id="a2222">
+                后果脚后跟结果与分析很过分和哥哥富贵花和方法杨天宇凤飞飞突然过一天夫人天赋的人人都的人的让敌人的人瑞典人敌人的天然的人的
+            </div>
+        </div>
+
+    </div>
+    <script>
+        document.getElementById('a111').onclick = function(){
+          document.getElementById('a22').style.display = 'block'
+          document.getElementById('a222').style.display = 'none'
+          document.getElementById('a2222').style.display = 'none'
+          document.getElementById('span1').style.left = '10px'
+        }
+        document.getElementById('a1111').onclick = function(){
+          document.getElementById('a22').style.display = 'none'
+          document.getElementById('a222').style.display = 'block'
+          document.getElementById('a2222').style.display = 'none'
+          document.getElementById('span1').style.left = '50px'
+        }
+        document.getElementById('a11111').onclick = function(){
+          document.getElementById('a22').style.display = 'none'
+          document.getElementById('a222').style.display = 'none'
+          document.getElementById('a2222').style.display = 'block'
+          document.getElementById('span1').style.left = '90px'
+        }
+    </script>
+</body>
+
+</html>
